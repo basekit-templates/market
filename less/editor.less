@@ -26,18 +26,16 @@ body.edit-mode {
     // Navigation
     // ------------------------------
 
-    .widget[data-widget-type="extendednavigation"] {
-        .bk-overlay {
-            @media @bp-global-small {
-                position: fixed !important;
-                top: 0 !important;
-                right: 0 !important;
-                width: 47px !important;
-                height: 47px !important;
-                bottom: auto !important;
-                left: auto !important;
-                z-index: 99999 !important;
-            }
+    .widget[data-widget-type="extendednavigation"] + .widget-overlay {
+        @media @tablet {
+            position: fixed !important;
+            top: 0 !important;
+            right: 0 !important;
+            width: 47px !important;
+            height: 47px !important;
+            bottom: auto !important;
+            left: auto !important;
+            z-index: 99999 !important;
         }
     }
 
