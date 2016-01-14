@@ -1,8 +1,8 @@
 {
-    "name": "Market",
+    "name": "Prop",
     "widgetVersion":2,
-    "thumbnail": "market.png",
-    "screenshot":"market-screenshot.jpg",
+    "thumbnail": "prop.png",
+    "screenshot":"prop-screenshot.jpg",
     "templateType":"standard",
     "pageTypes": ["home"],
      "images":[
@@ -13,9 +13,9 @@
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#DD0565",
-            "color3":"#F7F7F7",
-            "color4":"#DD0565",
+            "color2":"#282828",
+            "color3":"#d6d6d6",
+            "color4":"#282828",
             "color5":"#555250",
             "color6":"#000000",
             "color7":"#9AA7B5"
@@ -58,9 +58,9 @@
         }
     },
     "fontSwatch": {
-       "title": "Arvo, PT Sans",
+       "title": "Lato",
         "font1": {
-            "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "26px",
             "font-weight": "700",
             "line-height": "35px",
@@ -68,7 +68,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "24px",
             "font-weight": "700",
             "line-height": "33px",
@@ -76,7 +76,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "22px",
             "font-weight": "700",
             "line-height": "30px",
@@ -84,7 +84,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "19px",
             "font-weight": "700",
             "line-height": "25px",
@@ -92,18 +92,18 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Droid Sans\", Helvetica, Arial, sans-serif",
-            "font-size": "17px",
-            "font-weight": "400",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "16px",
+            "font-weight": "300",
             "line-height": "24px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
-            "font-size": "20px",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "16px",
             "font-weight": "700",
-            "line-height": "26px",
+            "line-height": "24px",
             "color": "@color-swatch6",
             "color-hover": "@color-swatch6",
             "letter-spacing": "inherit",
@@ -111,7 +111,7 @@
             "background-color-hover": "@color-swatch3"
          },
         "font7": {
-            "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "14px",
             "font-weight": "700",
             "line-height": "27px",
@@ -121,26 +121,26 @@
             "background-color-hover": "@color-swatch3"
         },
         "font8": {
-            "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "30px",
-            "font-weight": "700",
-            "line-height": "35px",
-            "color": "@color-swatch1",
+            "font-weight": "400",
+            "line-height": "38px",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "18px",
-            "font-weight": "700",
-            "line-height": "23px",
-            "color": "@color-swatch5",
+            "font-weight": "300",
+            "line-height": "26px",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
-            "font-size": "26px",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "32px",
             "font-weight": "700",
-            "line-height": "36px",
+            "line-height": "30px",
             "color": "@color-swatch2",
             "letter-spacing": "4px"
         }
@@ -219,9 +219,9 @@
         "feature": {
             "color__feature--background" : "@color__primary",
             "color__feature-headline--text" : "@font-swatch8-color",
-            "color__feature-headline--background" : "fade(@color__primary, 80%)",
+            "color__feature-headline--background" : "@color-swatch1",
             "color__feature-strapline--text" : "@font-swatch9-color",
-            "color__feature-strapline--background" : "darken(fade(@color__body--background, 90%), 3%)",
+            "color__feature-strapline--background" : "@color-swatch3",
             "color__feature-button--text" : "@color__body--background",
             "font__feature-headline--font-family" : "@font-swatch8-font-family",
             "font__feature-headline--font-size" : "@font-swatch8-font-size",

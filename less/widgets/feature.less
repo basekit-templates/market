@@ -76,9 +76,9 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: -webkit-linear-gradient(44deg, fade(@color__feature--background, 50%) 0%, fade(@color__feature--background, 20%) 100%);
-        background-image: -o-linear-gradient(44deg, fade(@color__feature--background, 50%) 0%, fade(@color__feature--background, 20%) 100%);
-        background-image: linear-gradient(134deg, fade(@color__feature--background, 50%) 0%, fade(@color__feature--background, 20%) 100%);
+        background-image: -webkit-linear-gradient(44deg, fade(@color__feature--background, 0%) 0%, fade(@color__feature--background, 0%) 100%);
+        background-image: -o-linear-gradient(44deg, fade(@color__feature--background, 0%) 0%, fade(@color__feature--background, 0%) 100%);
+        background-image: linear-gradient(134deg, fade(@color__feature--background, 0%) 0%, fade(@color__feature--background, 0%) 100%);
 
     }
 
@@ -136,6 +136,7 @@
     padding: 20px 40px;
     color: @color__feature-headline--text;
     background-color: @color__feature-headline--background;
+    max-width: 50%;
 
     @media @bp-global-medium {
         font-size: bkscale(@font__feature-headline--font-size, 0.88);
@@ -165,6 +166,7 @@
     padding: 20px 40px;
     color: @color__feature-strapline--text;
     background-color: @color__feature-strapline--background;
+    max-width: 50%;
 
     @media @bp-global-medium {
         font-size: bkscale(@font__feature-strapline--font-size, 0.9);
@@ -209,6 +211,7 @@
         background-color:  fade(@color__feature-button--text, 7%);
         margin: 14px 25px;
         padding: 10px 15px;
+        color: @color__feature-button--text;
         @media @bp-global-small {
             padding: 10px 10px;
             margin: 14px 6px;
