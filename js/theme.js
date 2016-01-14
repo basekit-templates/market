@@ -1,5 +1,5 @@
 // -----------------------------
-// Zest Template: JS > theme.js
+// Prop Template: JS > theme.js
 // -----------------------------
 
 
