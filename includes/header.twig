@@ -4,7 +4,10 @@
 	<div class="container">
 		<div class="company">
 			<div class="template-logo">
-				{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+				{{widget('logo', 'logo', {
+					"defaultlogo": asset('images/logo.png'),
+					"showTplWidget":"0"
+				})|raw}}
 			</div>
 
 			<div class="template-companyname">
