@@ -10,13 +10,19 @@
 // ------------------------------
 
 
-//  1.   Navigation Overlay
+//  1.   Navigation Variable
 
 
 
 
 
-
+.extendednavigation {
+	.navigation-item .item-name {
+		&__navigation-item.selected > .item-name {
+			color: @color__navigation--text--selected;
+		}
+	}
+}
 
 
 
@@ -66,13 +72,6 @@
 	        z-index: 10002;
 		}
 
-	    &:before {
-	        top: 0;
-	        background-image: -webkit-linear-gradient(fade(@color__navigation--background, 100%) 0%, fade(@color__navigation--background, 0%) 100%);
-	        background-image: -o-linear-gradient(fade(@color__navigation--background, 100%) 0%,fade(@color__navigation--background, 0%) 100%);
-	        background-image: linear-gradient(fade(@color__navigation--background, 100%) 0%, fade(@color__navigation--background, 0%) 100%);
-		}
-
 		&:after {
 	        bottom: 0;
 	        background-image: -webkit-linear-gradient(fade(@color__navigation--background, 0%) 0%, @color__navigation--background 100%);
@@ -102,7 +101,9 @@
 // ------------------------------
 .navigation-list  {
 	margin: 0;
-
+	@media @tablet {
+		box-shadow: 0 0 20px;
+	}
 }
 
 
@@ -133,11 +134,6 @@
 	&, * {
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 	}
-}
-
-
-.navigation-item:not(.navigation-item--child):last-child {
-	margin-bottom: 50px;
 }
 
 
