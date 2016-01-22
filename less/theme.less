@@ -96,6 +96,11 @@ body {
     }
 }
 
+.template-content > .container {
+    @media @tablet {
+        display: block;
+    }
+}
 
 .template-content .page {
     max-width: 1200px;
@@ -476,6 +481,7 @@ body {
         -webkit-align-items: stretch;
         -ms-flex-align: stretch;
         align-items: stretch;
+        display: block;
     }
 
     .page {
@@ -541,6 +547,7 @@ body {
 
         @media @tablet {
             padding: 30px 20px 20px;
+             display: block;
         }
 
         @media @bp-global-small {
