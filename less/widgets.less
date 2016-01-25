@@ -91,7 +91,46 @@
 // -----------------------------
 
 
-@import "@{templateLocal}/less/widgets/logo.less";
+// Logo
+// ------------------------------
+
+
+.logo {
+    margin: 0;
+    @media @bp-global-medium {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+
+
+
+// Logo, Logo Link
+// ------------------------------
+
+
+.logo, .logo-link {
+    // Removes space around inline elements
+    line-height: 0;
+    color: @color__companyname--text;
+}
+
+
+
+
+// Logo Image
+// ------------------------------
+
+
+.logo-image {
+    // Restricting maximum image size
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}
 
 
 
@@ -101,7 +140,22 @@
 // -----------------------------
 
 
-@import "@{templateLocal}/less/widgets/companyname.less";
+.company-link {
+    margin: 0;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: none;
+    }
+    @media @bp-global-medium {
+        font-size: bkscale(@font__companyname--font-size, 0.85);
+        line-height: bkscale(@font__companyname--line-height, 0.85);
+    }
+    @media @bp-global-small {
+        font-size: bkscale(@font__companyname--font-size, 0.7);
+        line-height: bkscale(@font__companyname--line-height, 0.7);
+    }
+}
 
 
 
@@ -148,14 +202,43 @@
 // ------------------------------
 
 
-@import "@{templateLocal}/less/widgets/dropbox.less";
+// Dropbox Button, Dropbox Button Label
+.dropbox__button, .dropbox__label {
+    vertical-align: top;
+}
+
+// Dropbox Button
+.dropbox__button {
+    margin-right: 0; // LESS Framework Reset
+}
+
+
+
+
+// Dropbox Button Label
+.dropbox__label {
+    display: inline-block;
+    padding: 0.4em 0;
+    margin-left: 0.4em;
+    font-family: @font__navigation--font-family;
+    font-size:  @font__navigation--font-size;
+    line-height: @font__navigation--line-height;
+}
 
 
 // 5.3 Click to call
 // ------------------------------
 
 
-@import "@{templateLocal}/less/widgets/clicktocall.less";
+.widget__clicktocall {
+
+    // Phone Number Link
+    .phone-number-link {
+        @media @mobile, only screen and (max-width:700px) and (orientation:landscape) {
+            .button;
+        }
+    }
+}
 
 
 
@@ -235,7 +318,14 @@
 // -----------------------------
 
 
-@import "@{templateLocal}/less/widgets/divider.less";
+.widget__line {
+    line-height: 0;
+}
+
+hr.rule {
+    height: 3px;
+    background-color: darken(@color__body--background, 5%);
+}
 
 
 
