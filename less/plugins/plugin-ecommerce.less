@@ -1,5 +1,5 @@
 // ------------------------------------
-// Zest Template: CSS > Plugin: Ecommerce
+// Prop Template: CSS > Plugin: Ecommerce
 // ------------------------------------
 
 
@@ -31,7 +31,33 @@
 // ------------------------------
 
 
-@import "@{templateLocal}/less/plugins/ecommerce/featured-products.less";
+// Featured Product Listing Title
+// -------------------------------
+
+
+.ecomfeaturedproducts__listing-title {
+    margin-bottom: 1em;
+
+    @media @bp-global-medium {
+        font-size: bkscale(@font__h2--font-size, 0.8);
+        line-height: bkscale(@font__h2--line-height, 0.8);
+    }
+
+    @media @bp-global-small {
+        font-size: bkscale(@font__h2--font-size, 0.7);
+        line-height: bkscale(@font__h2--line-height, 0.7);
+    }
+}
+
+
+
+// Columns variations
+// ---------------------------------
+
+
+.responsivecolumns {
+
+}
 
 
 
