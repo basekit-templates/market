@@ -20,12 +20,8 @@
 // ------------------------------
 
 
-<<<<<<< HEAD
-=======
 @bp-blog-post-layout-vertical: ~"only screen and (max-width : 900px)";
 
-
->>>>>>> e1ef8dac6d37eb645871f0320c6d7614f2ed3c36
 .blogpost {
 
 
@@ -91,59 +87,37 @@
 
 
 
-    // Post Excerpt / Post Body
+    // Post Title
     // ------------------------------
 
 
-    .post-body {
+    .post-title {
+        font-size: bkscale(@font__h1--font-size, 1);
+        line-height: bkscale(@font__h1--line-height, 1);
+        font-weight: @font__h1--font-weight;
+        position: relative;
+        margin-bottom: 1em;
+        display: inline-block;
+        color: @color__blogpost-title--text;
+        padding: 20px 30px;
+        background-color: @color__blogpost-title--background;
+        line-height: inherit;
 
-    }
-
-
-
-
-    // Post Header
-    // ------------------------------
-
-
-    .post-header {
-
-    }
-
-
-
-
-        // Post Title
-        // ------------------------------
-
-
-        .post-title {
-            font-size: bkscale(@font__h1--font-size, 1);
-            line-height: bkscale(@font__h1--line-height, 1);
-            font-weight: @font__h1--font-weight;
-            position: relative;
-            margin-bottom: 1em;
-            display: inline-block;
-            color: @color__blogpost-title--text;
-            padding: 20px 30px;
-            background-color: @color__blogpost-title--background;
-            line-height: inherit;
-
-            @media @bp-global-medium {
-                font-size: bkscale(@font__h1--font-size, 0.9);
-                line-height: bkscale(@font__h1--line-height, 0.9);
-            }
-
-            @media @bp-global-small {
-                font-size: bkscale(@font__h1--font-size, 0.8);
-                line-height: bkscale(@font__h1--line-height, 0.8);
-                padding: 15px 20px;
-            }
-
-            @media @mobile {
-                background-color: @color__primary;
-            }
+        @media @bp-global-medium {
+            font-size: bkscale(@font__h1--font-size, 0.9);
+            line-height: bkscale(@font__h1--line-height, 0.9);
         }
+
+        @media @bp-global-small {
+            font-size: bkscale(@font__h1--font-size, 0.8);
+            line-height: bkscale(@font__h1--line-height, 0.8);
+            padding: 15px 20px;
+        }
+
+        @media @mobile {
+            background-color: @color__primary;
+        }
+    }
 
 
 
@@ -310,18 +284,7 @@
 
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> e1ef8dac6d37eb645871f0320c6d7614f2ed3c36
     // ------------------------------
-    // Sharing Links
-    // ------------------------------
-
-
-
-
     // Sharing Links
     // ------------------------------
 
@@ -369,19 +332,6 @@
 .blogpostlist {
 
 
-
-
-
-    // Post Items
-    // ------------------------------
-
-
-    .post-items {
-    }
-
-
-
-
     // Post Article
     // ------------------------------
 
@@ -414,37 +364,35 @@
         top: 16px;
     }
 
-        // Image Link
+    // Image Link
+    .image-link {
+        .animation;
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
-        .image-link {
-            .animation;
-            background-position: center center;
-            background-size: cover;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            -webkit-transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
 
-
-            &:hover {
-                -webkit-transform: scale(1.2);
-                -moz-transform: scale(1.2);
-                -o-transform: scale(1.2);
-                -ms-transform: scale(1.2);
-                transform: scale(1.2);
-            }
+        &:hover {
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
         }
+    }
 
-        // Image
-
-        .blogpostlist__image {
-            display: none;
-        }
+    // Image
+    .blogpostlist__image {
+        display: none;
+    }
 
 
 
@@ -464,9 +412,6 @@
         @media @bp-global-small {
             margin: 0 12px;
         }
-<<<<<<< HEAD
-
-
     }
 
 
@@ -491,22 +436,20 @@
         }
     }
 
-        // Title Link
-
-        .title-link {
-            display: inline-block;
-            color: @color__blogpostlist-title--text;
-            padding: 20px 30px;
-            background-color: @color__blogpostlist-title--background;
-            line-height: inherit;
-            @media @bp-global-small {
-                padding: 15px 20px;
-            }
+    // Title Link
+    .title-link {
+        display: inline-block;
+        color: @color__blogpostlist-title--text;
+        padding: 20px 30px;
+        background-color: @color__blogpostlist-title--background;
+        line-height: inherit;
+        @media @bp-global-small {
+            padding: 15px 20px;
         }
+    }
 
 
     // Post Excerpt
-
     .post-excerpt {
 
 
@@ -522,10 +465,7 @@
         }
     }
 
-
-
     // Read more
-
     .read-more {
         display: inline-block;
         float: left;
@@ -561,7 +501,6 @@
     .post-footer {
 
         // Time
-
         .timestamp {
             float: right;
             padding-top: 16px;
@@ -594,17 +533,9 @@
             }
         }
     }
-}
-=======
->>>>>>> e1ef8dac6d37eb645871f0320c6d7614f2ed3c36
-
-
-    }
-
 
 
     // Post Title
-
     .post-title {
         font-size: bkscale(@font__h1--font-size, 1);
         line-height: bkscale(@font__h1--line-height, 1);
@@ -623,22 +554,20 @@
         }
     }
 
-        // Title Link
-
-        .title-link {
-            display: inline-block;
-            color: @color__blogpostlist-title--text;
-            padding: 20px 30px;
-            background-color: @color__blogpostlist-title--background;
-            line-height: inherit;
-            @media @bp-global-small {
-                padding: 15px 20px;
-            }
+    // Title Link
+    .title-link {
+        display: inline-block;
+        color: @color__blogpostlist-title--text;
+        padding: 20px 30px;
+        background-color: @color__blogpostlist-title--background;
+        line-height: inherit;
+        @media @bp-global-small {
+            padding: 15px 20px;
         }
+    }
 
 
     // Post Excerpt
-
     .post-excerpt {
 
 
@@ -657,7 +586,6 @@
 
 
     // Read more
-
     .read-more {
         display: inline-block;
         float: left;
