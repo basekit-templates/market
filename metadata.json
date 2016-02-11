@@ -276,7 +276,7 @@
             "color__ecomproduct-title--text" : "@color__body--background",
             "color__ecomproduct-price--background" : "darken(fade(@color__body--background, 90%), 3%)",
             "color__ecomproduct-price--text" : "@color__p--text",
-            "color__ecombasket--background" : "@color__navigation--background"
+            "color__ecombasket--background" : "@color-swatch3"
         },
         "menu": {
             "color__menu-section-header--background" : "@color__primary",
