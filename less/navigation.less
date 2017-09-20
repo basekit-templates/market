@@ -28,12 +28,18 @@
 
 
 [data-widget-type="extendednavigation"] .widget-overlay {
-	display: none;
+
+	@media @tablet {
+		display: none;
+	}
 }
 
 
 .navigation--open [data-widget-type="extendednavigation"] .widget-overlay {
-	display: block;
+
+	@media @tablet {
+		display: block;
+	}
 }
 
 
