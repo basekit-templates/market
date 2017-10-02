@@ -27,6 +27,21 @@
 // --------------------------------
 
 
+[data-widget-type="extendednavigation"] .widget-overlay {
+
+	@media @tablet {
+		display: none;
+	}
+}
+
+
+.navigation--open [data-widget-type="extendednavigation"] .widget-overlay {
+
+	@media @tablet {
+		display: block;
+	}
+}
+
 
 // Navigation Body
 // ------------------------------
@@ -165,7 +180,7 @@
 
 // Selected Item (not open folder)
 
-.navigation-body .navigation-item.selected:not(.open) > .item-name {
+.extendednavigation:not(.open) .navigation-item.selected > .item-name {
 	color: @color__navigation--text--selected;
 }
 

@@ -9,6 +9,10 @@ body.edit-mode {
 
     .ecommerce-bar {
         z-index: 8001;
+
+        @media @tablet {
+            z-index: 1002;
+        }
     }
 
     // Search Overlay Toggle
@@ -30,16 +34,11 @@ body.edit-mode {
         .widget-overlay {
             @media @tablet {
                 position: fixed !important;
-                top: 0 !important;
+                top: 47px !important;
                 right: 0 !important;
-                width: 50px !important;
-                height: 47px !important;
-                bottom: auto !important;
-                left: auto !important;
-                z-index: 99999 !important;
-            }
-            @media @mobile {
-                width: 12%!important
+                bottom: 0 !important;
+                left: 0 !important;
+                z-index: 10003 !important;
             }
         }
     }
@@ -50,7 +49,7 @@ body.edit-mode {
     }
 }
 
-// Widget Overlay 
+// Widget Overlay
 .template-navigation {
     .widget__item {
         @media @tablet {
