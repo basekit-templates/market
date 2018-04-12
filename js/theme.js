@@ -366,3 +366,19 @@ $(document).ready(function() {
 
 }); // Document Ready
 
+
+
+
+// ---------------------------------
+//  Mobile viewport height
+// ---------------------------------
+
+const siteHeight = {
+    updateViewportHeight() {
+        const iframeWindow = document.querySelector('html').contentWindow;
+        const iframeBody = iframeWindow.document.body;
+        const height = window.getComputedStyle(document.querySelector('.js-app-content')).getPropertyValue('height');
+        iframeBody.style.setProperty('--viewport-height', height);
+    }
+};
+
