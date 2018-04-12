@@ -373,12 +373,14 @@ $(document).ready(function() {
 //  Mobile viewport height
 // ---------------------------------
 
-const siteHeight = {
-    updateViewportHeight() {
-        const iframeWindow = document.querySelector('html').contentWindow;
-        const iframeBody = iframeWindow.document.body;
-        const height = window.getComputedStyle(document.querySelector('.js-app-content')).getPropertyValue('height');
-        iframeBody.style.setProperty('--viewport-height', height);
-    }
-};
+var siteWindow = document.body;
+var siteHeight = document.documentElement.clientHeight;
+
+siteWindow.style.setProperty('--viewport-height', siteHeight + 'px');
+
+if (window.matchMedia("(max-width: 851px)").matches) {
+    $(document).scroll(function() {
+        $('body').css('background-position', 'center ' + $(document).scrollTop() + 'px');
+    });
+}
 

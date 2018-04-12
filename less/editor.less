@@ -59,6 +59,10 @@ body.edit-mode {
 }
 
 
-.bgImageFullscreen {
-    background-size: var(--viewport-height);
+body.bgImageFullscreen {
+
+    @media @tablet {
+        background-size: auto calc(var(--viewport-height) + 56px);
+        -webkit-overflow-scroll: touch;
+    }
 }
