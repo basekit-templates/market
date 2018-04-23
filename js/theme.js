@@ -366,3 +366,21 @@ $(document).ready(function() {
 
 }); // Document Ready
 
+
+
+
+// ---------------------------------
+//  Mobile viewport height
+// ---------------------------------
+
+var siteWindow = document.body;
+var siteHeight = document.documentElement.clientHeight;
+
+siteWindow.style.setProperty('--viewport-height', siteHeight + 'px');
+
+if (window.matchMedia("(max-width: 851px)").matches) {
+    $(document).scroll(function() {
+        $('body').css('background-position', 'center ' + $(document).scrollTop() + 'px');
+    });
+}
+
