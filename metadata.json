@@ -209,9 +209,12 @@
             "color__sidebar--background" : "@color__body--background"
         },
         "navigation": {
+            "color__navigation--background": "@color__primary",
             "color__navigation--text" : "@font-swatch6-color",
+            "color__navigation-item--text" : "@color__secondary",
             "color__navigation--text--hover" : "fade(@color__navigation--text, 50%)",
             "color__navigation--text--selected": "darken(#282828,40%)",
+            "color__navigation-item--selected" : "@color__secondary",
             "font__navigation--font-family" : "@font-swatch6-font-family",
             "font__navigation--font-size" : "@font-swatch6-font-size",
             "font__navigation--font-weight" : "@font-swatch6-font-weight",
