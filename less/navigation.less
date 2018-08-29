@@ -59,13 +59,12 @@
     	position: fixed;
     	overflow-y: scroll;
     	overflow-x: hidden;
-		background-color: @color__primary;
+		background-color: @color__navigation--background;
 		-webkit-transition: all 0.25s ease-in-out;
 		-moz-transition: all 0.25s ease-in-out;
 		-o-transition: all 0.25s ease-in-out;
 		transition: all 0.25s ease-in-out;
 		z-index: 1003;
-		//height: 100vh;
 		opacity: 0;
 		-webkit-transform: translate(100%, 0px);
         -moz-transform: translate(100%, 0px);
@@ -159,13 +158,14 @@
 	color: @color__navigation--text;
 
 	@media @bp-global-small {
-		color: @color__body--background;
+		color: @color__navigation-item--text;
 	}
 
 	&:hover {
 		color: @color__navigation--text--hover;
+
 		@media @bp-global-small {
-			color: fade(@color__body--background, 80%);
+			color: @color__navigation-item--text;
 		}
 	}
 }
@@ -180,21 +180,14 @@
 
 // Selected Item (not open folder)
 
-.extendednavigation:not(.open) .navigation-item.selected > .item-name {
-	color: @color__navigation--text--selected;
-}
-
-
+.extendednavigation:not(.open) .navigation-item.selected > .item-name,
 .navigation-item.folder.selected:not(.open) > .item-name {
 	color: @color__navigation--text--selected;
+
+	@media @bp-global-small {
+		color: @color__navigation-item--selected;
+	}
 }
-
-// Hover
-
-.navigation-body .navigation-item.selected.folder:not(.open):hover > .item-name {
-
-}
-
 
 
 
@@ -396,7 +389,6 @@
 
 	&:before {
 		top: 13px;
-
 	}
 
 	// Bottom bar
@@ -423,11 +415,11 @@
 
 
 		&:before {
-			top: 23px; background: @color__body--background; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);
+			top: 23px; background: @color__navigation-item--text; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);
 
 		}
 		&:after {
-			bottom: 21px; background: @color__body--background; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);
+			bottom: 21px; background: @color__navigation-item--text; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);
 		}
 	}
 }
