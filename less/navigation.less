@@ -59,7 +59,7 @@
     	position: fixed;
     	overflow-y: scroll;
     	overflow-x: hidden;
-		background-color: @color__navigation--background;
+    	background-color: @color__sidebar--background;
 		-webkit-transition: all 0.25s ease-in-out;
 		-moz-transition: all 0.25s ease-in-out;
 		-o-transition: all 0.25s ease-in-out;
@@ -88,9 +88,9 @@
 
 		&:after {
 	        bottom: 0;
-	        background-image: -webkit-linear-gradient(fade(@color__navigation--background, 0%) 0%, @color__navigation--background 100%);
-	        background-image: -o-linear-gradient(fade(@color__navigation--background, 0%) 0%, @color__navigation--background 100%);
-	        background-image: linear-gradient(fade(@color__navigation--background, 0%) 0%, @color__navigation--background 100%);
+	        background-image: -webkit-linear-gradient(fade(@color__sidebar--background, 0%) 0%,@color__sidebar--background 100%);
+	        background-image: -o-linear-gradient(fade(@color__sidebar--background, 0%) 0%, @color__sidebar--background 100%);
+	        background-image: linear-gradient(fade(@color__sidebar--background, 0%) 0%, @color__sidebar--background 100%);
 	    }
     }
 }
@@ -158,14 +158,14 @@
 	color: @color__navigation--text;
 
 	@media @bp-global-small {
-		color: @color__navigation-item--text;
+		color: contrast(@color__sidebar--background, black, white);
 	}
 
 	&:hover {
 		color: @color__navigation--text--hover;
 
 		@media @bp-global-small {
-			color: @color__navigation-item--text;
+			color: contrast(@color__sidebar--background, black, white);
 		}
 	}
 }
@@ -415,11 +415,11 @@
 
 
 		&:before {
-			top: 23px; background: @color__navigation-item--text; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);
+			top: 23px; background: contrast(@color__sidebar--background, black, white); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);
 
 		}
 		&:after {
-			bottom: 21px; background: @color__navigation-item--text; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);
+			bottom: 21px; background: contrast(@color__sidebar--background, black, white); -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);
 		}
 	}
 }
