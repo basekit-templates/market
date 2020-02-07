@@ -1,0 +1,172 @@
+
+// -----------------------------
+// Migration Styles
+// -----------------------------
+
+
+
+
+#migrated-site {
+
+
+    // Stylesheet overrides
+    // -----------------------------
+
+
+    &.edit .template-header {
+        left: 100px;
+        
+        @media @tablet {
+            left: 0;
+        }
+    }
+
+
+    &.edit .ecommerce-bar {
+        right: 100px;
+        
+        @media @tablet {
+            right: 0;
+        }
+    }
+    
+    
+    &.row-edit .ecommerce-bar {
+        display: none;
+    }
+
+
+    .template-content .page {
+        margin: 0;
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    
+    [data-widget-type="pagetitle"]:not(.bk-tpl-hidden) {
+        padding-top: 60px;
+        
+        @media @tablet {
+            padding-top: 40px;
+        }
+        
+        + #page-zones__main > .style--light:first-child .row__container,
+        + #page-zones__main > [data-name="responsivecolumns"]:first-child,
+        + #page-zones__main > .widget:not([data-name="row"]):first-child {
+            padding-top: 20px;
+        }
+    }
+    
+    
+    .pagetitle-text {
+        padding-bottom: 0;
+    }
+    
+    
+    [data-name="row"] .product-item-details {
+        position: relative;
+    }
+
+
+    [data-name="row"] .ecomproductslist__title-link {
+        padding-left: 0;
+    }
+    
+    
+    [data-name="row"] .select-wrap:after {
+        right: 8px;
+    }
+    
+    
+    [data-name="row"] .blogpostlist .post-image {
+        top: 0;
+    }
+    
+    
+    [data-name="row"] .blogpostlist__post-title {
+        margin-bottom: 0;
+    }
+    
+    
+    [data-name="row"] .blogpostlist__title-link {
+        padding-left: 0;
+    }
+    
+    
+    [data-name="row"] .social-link {
+        padding: 0 8px;
+    }
+    
+    
+    [data-name="row"] .social-link:before {
+        display: inline-block;
+        height: auto;
+        margin-right: 6px;
+        width: auto;
+    }
+    
+    
+    [data-name="row"] .social-link:hover::before {
+        background-color: transparent;
+    }
+
+
+    [data-name="row"] .gallery__image-link {
+        position: relative;
+    }
+
+
+
+    // Migration styles
+    // -----------------------------
+
+
+    // Applies spacing to widgets to mimic container width
+    .empty-zone,
+    #page-zones__main:empty,
+    #page-zones__main > .widget:not([data-name="row"]),
+    .row:not(.row--width-no-padding) .row__container,
+    [data-widget-type="pagetitle"] {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1080px;
+        width: 85%;
+        
+        @media @tablet {
+            width: 95%;
+        }
+    }
+    
+    
+    // Adds spacing to a section when a widget follows it
+    #page-zones__main > [data-name="row"] + .widget:not([data-name="row"]),
+    #page-zones__main > .widget:not([data-name="row"]) + [data-name="row"]:not(:last-child),
+    &.edit #page-zones__main-overlay + .widget:not([data-name="row"]),
+    #page-zones__main > .widget:not([data-name="row"]):first-child {
+        padding-top: 60px;
+
+        @media @tablet {
+            padding-top: 40px;
+        }
+    }
+    
+    
+    
+    
+    
+    // Move spacing to last widget in the main zone (not sections)
+    #page-zones__main > .widget:not([data-name="row"]):last-child {
+        margin-bottom: 60px;
+        
+        @media @tablet {
+            margin-top: 40px;
+        }
+    }
+
+
+    // Section controls
+    .row-overlay:before,
+    .row-overlay:after {
+        background: none !important;
+    }
+}

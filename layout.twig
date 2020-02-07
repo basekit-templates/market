@@ -1,11 +1,9 @@
 <!doctype html>
-
 <html class="no-js" lang="{{ page.seoLang }}">
 
 	{% include "includes/head.twig" %}
 
-	<body class="{{ page.backgroundClass }} no-touch{% if app.mode != 'published' and app.mode != 'site-preview' %} edit-mode{% endif %}
-">
+	<body {{ isV10sSite ? 'id="migrated-site"' : '' }} class="{{ page.backgroundClass }} no-touch{% if app.mode != 'published' and app.mode != 'site-preview' %} edit-mode{% endif %}">
 
 		<div class="site-container">	
 
@@ -40,13 +38,9 @@
 
 		</div>
 
-
-
 	    {% include basekit.bodyScript %}
 
 		<script src="{{ asset('js/theme.js')}}"></script>
 
-
 	</body>
-
 </html>
